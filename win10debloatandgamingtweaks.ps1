@@ -1,5 +1,6 @@
 ##########
 # Master Branch : https://github.com/ChrisTitusTech/win10script
+# Primary Fork: https://https://github.com/DaddyMadu/Windows10GamingFocus from DaddyMadu
 # Current Author : pasiegel 
 # Current Author Source: https://github.com/pasiegel/Windows10GamingFocus
 #
@@ -10,7 +11,7 @@
 #     Changelogs Moved to ReadMe File for better mangement. 
 #
 ##########
-$host.ui.RawUI.WindowTitle = "DaddyMadu Ultimate Windows 10 Debloater and Gaming Focus Tweaker"
+$host.ui.RawUI.WindowTitle = "Windows 10 Debloater and Pinball Focus Tweaker"
 cmd /c 'title [Windows 10 Debloater and Pinball Focus Tweaker]'
 Write-Host 'Welcome to Ultimate Windows 10 Debloater and Pinball Focus Tweaker';
 Write-Host "Please DISABLE your ANTIVIRUS to prevent any issues and PRESS any KEY to Continue!" -ForegroundColor Red -BackgroundColor Black
