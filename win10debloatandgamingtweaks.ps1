@@ -339,7 +339,7 @@ Function InstallTitusProgs {
 	choco install chocolatey-core.extension -y
 	Write-Output "Running O&O Shutup with Recommended Settings"
 	Import-Module BitsTransfer
-	Start-BitsTransfer -Source "https://raw.githubusercontent.com/DaddyMadu/Windows10GamingFocus/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+	Start-BitsTransfer -Source "https://github.com/pasiegel/Windows10GamingFocus/edit/master/ooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
 	Start-Sleep -Second 10
@@ -350,6 +350,8 @@ Function InstallTitusProgs {
 # Install the latest Microsoft Visual C++ 2010-2019 Redistributable Packages and Silverlight
 Function InstallMVC {
 	choco install -y vcredist2010 | Out-Null
+	choco install -y vcredist2005 | Out-Null
+	choco install -y vcredist2008 | Out-Null
 }
 
 Function InstallSumatra {
