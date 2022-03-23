@@ -1,5 +1,5 @@
-# Windows10GamingFocus
-This is A FORK Based On ChrisTitusTech that's foucus on debloat and optimize windows 10 for the lowest latency and best gaming experience, the Ultimate Windows 10 Script is a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine.
+# Windows10PinballFocus
+This is A FORK Based On ChrisTitusTech and DaddyMadu's debloat and optimize windows 10 script for the lowest latency and best gaming experience, the Ultimate Windows 10 Script is a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine. This fork is my edit intended for my virtual pinball cabinet
 ```
 Warrning: I am NOT responsible for what you do to your Devices/Systems, so follow these instructions at your own risk. Make sure you know what you're doing, it's best to understand the process rather than just copy and paste commands and such.
 ```
@@ -8,114 +8,11 @@ Warrning: I am NOT responsible for what you do to your Devices/Systems, so follo
 
 27 June 2021
 ```
-- Getting Ready for Windows 11 yay!
 - Disabling New Windows 10 News and Interests Feed.
 - Movilng Updates to slower release ring.
 - Delaying Windows Feature Updates by 45 Days to Ensure a Bug Free Build.
 - Delaying Windows Quality Updates by 7 Days to Ensure a Bug Free security updates.
 - much more fixes forget to remember!
-```
-10 April 2021
-```
-- Reverting removal of XBOX as it's required by some Amd system for recording!
-- Removing installation of Sumatra, ChocoGUI, disable Microsoft Software Protection Platform Service, disable Wsappx to Fix 100% Disk Usage, as they cause issue with alot of people.
-- Fixing some issues with code and cleaning it to be prepaired with upcomming windows 10 21h1.
-```
-28 Feb 2021
-```
-- Adding Disabling Nagle’s Algorithm to Network Optimizations.
-- Fixing MSI Mode not applying correctly!
-- Keeping Dolby and Dolby Access from removing as requested.
-```
-23 Feb 2021
-```
-- Disable Controlled Folder Access in Windows 10 Windows Defender!
-```
-11 Jan 2021
-```
-- Fixed system restore was not created if runs before 24h of last point created.
-- Setting system restore maximum size to 5GB.
-- Adding option to enable or disable MSI Mode (Please read the WARNNINGS First!) .
-- Better warrning messages regarding critical options.
-```
-3 Jan 2021
-```
-- Fixed Start Menu Search (no need for power toys now!).
-```
-2 Jan 2021
-```
-- Disabling more of Un nessessary Services For Gaming.
-- Improved removal of default microsoft apps and bloatware.
-- Disabling New Microsoft MeetNow.
-- Unbinned StartMenu Titles and forced apps only view.
-```
-29 Dec 2020
-```
-- Hopfully fixed GPU Tweaks Issues on dual GPU laptops, GPU Tweaks is Now Applied only on GTX/RTX/AMD Cards Only!
-- Minor Tweaks and fixes in code.
-```
-24 Dec 2020 Big Update!
-```
-- Auto detect Windows screen Scale setting and apply Mouse fix accordingly for 100% Raw Mouse Input No Need For this fix now already auto detect and implemented (http://donewmouseaccel.blogspot.com/2010/03/markc-windows-7-mouse-acceleration-fix.html).
-- Auto detect Nvidia GPU and Apply Power and Latency Tweaks.
-- Auto Detect AMD GPU and Apply Latency Tweaks.
-```
-23 Dec 2020
-```
-- Applying Nvidia Tweaks.
-```
-20 Dec 2020 ( thanks to Fr33thy those tweaks from his registry version https://youtube.com/c/FR33THY )
-```
-- Disabling power throttling(Laptop).
-- Setting Processor scheduling to programms priority for Best Performance.
-- Disabling aero shake.
-- Show BSOD details instead of the sad smiley.
-- Disabling start menu live tiles.
-- Setting Wallpaper Quality to 100%.
-- Disabling search history.
-- Disabling "- Shortcut" Word.
-- Disabling Mouse Keys Keyboard Shortcut.
-- Disabling Windows Transparency.
-- Turning Off Safe Search.
-- Disabling Cloud Search.
-- Disabling Device History.
-- Disabling Windows Remote Assistance.
-- Disabling Search Histroy.
-```
-19 Dec 2020
-```
-- Disable DMA memory protection and cores isolation ("virtualization-based protection").
-- Disable Process and Kernel Mitigations.
-- Disallow drivers to get paged into virtual memory.
-- Use big system memory caching to improve microstuttering.
-- Force contiguous memory allocation in the DirectX Graphics Kernel.
-- Tell Windows to stop tolerating high DPC/ISR latencies.
-- Decrease mouse and keyboard buffer sizes.
-- disabled any power saving option under any network device.
-- disabled offloading, Green Ethernet, Giga Lite, EEE, Advanced EEE, Energy Efficient from all network devices.
-```
-16 Dec 2020
-```
-Fixed white shortcut for game lunchers for good.
-```
-7 Dec 2020
-```
-Replaced Adobe Acrobat Reader With open source lightweight Sumatra PDF! only 4mb!
-```
-6 Dec 2020
-```
-added Option to enable or disable Microsoft Software Protection Platform Service” Causing High CPU Usage in older systems
-added Option to enable or disable Microsoft Store and Wsappx to Fix 100% Disk Usage in Windows 10 in older systems
-```
-5 Dec 2020
-```
-fixed Restrict windows update p2p only to local
-added Disable Core Parking on current PowerPlan Ultimate Performance
-Now No Need To disable High precision event timer manually! script will do it for you!
-```
-2 Dec 2020
-```
-Option to Enable & Install Or Disable & Uninstall Microsoft OneDrive
 ```
 ## This Script Does The Following!
 
@@ -126,9 +23,9 @@ Option to Enable & Install Or Disable & Uninstall Microsoft OneDrive
 - Added Install Programs.
 - Added Debloat Microsoft Store Apps.
 - Removing Bloadwares.
-- Disable Or Enable Microsoft Windows Defender and related Processes.
-- Disable or Enable "Microsoft Software Protection Platform Service” that Cause High CPU Usage in some older systems.
-- Disable or Enable Wsappx to Fix 100% Disk Usage in Windows 10 in older systems.
+- Disable Microsoft Windows Defender and related Processes.
+- Disable "Microsoft Software Protection Platform Service” that Cause High CPU Usage in some older systems.
+- Disable Enable Wsappx to Fix 100% Disk Usage in Windows 10 in older systems.
 - Disabling Telemetry.
 - Disabling Wi-Fi Sense.
 - Disabling SmartScreen Filter.
@@ -147,7 +44,6 @@ Option to Enable & Install Or Disable & Uninstall Microsoft OneDrive
 - Stopping and disabling Diagnostics Tracking Service.
 - Stopping and disabling WAP Push Service.
 - Lowering UAC level.
-- Disabling SMB 1.0 protocol.
 - Setting current network profile to private.
 - Setting unknown networks profile to private.
 - Disabling automatic installation of network devices.
