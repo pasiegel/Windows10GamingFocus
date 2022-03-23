@@ -1,20 +1,18 @@
 ##########
 # Master Branch : https://github.com/ChrisTitusTech/win10script
-# Current Author : Daddy Madu 
-# Current Author Source: https://github.com/DaddyMadu/Windows10GamingFocus
+# Current Author : pasiegel 
+# Current Author Source: https://github.com/pasiegel/Windows10GamingFocus
 #
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
 #	Addition: One command to rule them all, One command to find it, and One command to Run it! 
 #
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('http://tweaks.daddymadu.gg')"
-#
 #     Changelogs Moved to ReadMe File for better mangement. 
 #
 ##########
 $host.ui.RawUI.WindowTitle = "DaddyMadu Ultimate Windows 10 Debloater and Gaming Focus Tweaker"
-cmd /c 'title [DaddyMadu Ultimate Windows 10 Debloater and Gaming Focus Tweaker]'
-Write-Host 'Welcome to DaddyMadu Ultimate Windows 10 Debloater and Gaming Focus Tweaker';
+cmd /c 'title [Windows 10 Debloater and Pinball Focus Tweaker]'
+Write-Host 'Welcome to Ultimate Windows 10 Debloater and Pinball Focus Tweaker';
 Write-Host "Please DISABLE your ANTIVIRUS to prevent any issues and PRESS any KEY to Continue!" -ForegroundColor Red -BackgroundColor Black
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
@@ -77,7 +75,7 @@ $tweaks = @(
 	"SetUACLow",                  # "SetUACHigh",
 	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
 	# "DisableAdminShares",           # "EnableAdminShares",
-	"DisableSMB1",                # "EnableSMB1",
+	"EnableSMB1",                # "DisableSMB1",
 	# "DisableSMBServer",           # "EnableSMBServer",
 	# "DisableLLMNR",               # "EnableLLMNR",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
@@ -132,9 +130,9 @@ $tweaks = @(
 	
 	
 	### UI Tweaks ###
-	"EnableActionCenter",          # "DisableActionCenter",
-	"EnableLockScreen",				# "DisableLockScreen",
-	"EnableLockScreenRS1",			# "DisableLockScreenRS1",
+	"DisableActionCenter",          # "EnableActionCenter",
+	"DisableLockScreen",				# "EnableLockScreen",
+	"DisableLockScreenRS1",			# "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
 	"DisableStickyKeys",            # "EnableStickyKeys",
@@ -153,7 +151,7 @@ $tweaks = @(
 	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
 	"SetVisualFXPerformance",     # "SetVisualFXAppearance",
 	# "AddENKeyboard",              # "RemoveENKeyboard",
-	"EnableNumlock",             	# "DisableNumlock",
+	"DisableNumlock",             	# "EnableNumlock",
 	"EnableDarkMode",				# "DisableDarkMode",
 	"Stop-EdgePDF",
 
@@ -164,7 +162,7 @@ $tweaks = @(
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
 	"ShowThisPCOnDesktop",          # "HideThisPCFromDesktop",
-	"ShowUserFolderOnDesktop",    # "HideUserFolderFromDesktop",
+	"HideUserFolderFromDesktop",    # "ShowUserFolderFromDesktop",
 	# "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",    # "ShowDesktopInExplorer",
 	# "HideDocumentsFromThisPC",      # "ShowDocumentsInThisPC",
@@ -185,7 +183,7 @@ $tweaks = @(
 	### Application Tweaks ###
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	#"UninstallMediaPlayer",         #"InstallMediaPlayer",
-	"UninstallInternetExplorer",  # "InstallInternetExplorer",
+	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
 	"UninstallLinuxSubsystem",      # "UninstallLinuxSubsystem",     #"InstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
