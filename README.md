@@ -1,5 +1,5 @@
 # Windows10PinballFocus
-This is A FORK Based On ChrisTitusTech and DaddyMadu's debloat and optimize windows 10 script for the lowest latency and best gaming experience, the Ultimate Windows 10 Script is a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine. This fork is my edit intended for my virtual pinball cabinet
+This is A FORK Based On ChrisTitusTech and DaddyMadu's debloat and optimize windows 10 script for the lowest latency and best gaming experience, the Ultimate Windows 10 Script is a creation from multiple debloat scripts and gists from github. This fork is my edit intended for my virtual pinball cabinet, if you helps you cool.
 ```
 Warrning: I am NOT responsible for what you do to your Devices/Systems, so follow these instructions at your own risk. Make sure you know what you're doing, it's best to understand the process rather than just copy and paste commands and such.
 ```
